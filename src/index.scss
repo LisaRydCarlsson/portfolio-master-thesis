@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import "src/variables.scss";
+
+* {
+	background-color: $primary-color;
+	color: $secondary-color;
+	font-family: "Figtree", sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+body {
+	margin: 0 auto;
+	min-height: calc(
+		100vh - 3rem
+	); /* Subtract footer height from viewport height */
+	position: relative; /* Establish positioning context */
+}
