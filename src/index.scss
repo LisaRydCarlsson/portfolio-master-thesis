@@ -1,3 +1,4 @@
+// index.scss
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import "src/variables.scss";
 
@@ -6,12 +7,39 @@
 	color: $secondary-color;
 	font-family: "Figtree", sans-serif;
 	letter-spacing: 0.1rem;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	margin: 0 auto;
-	min-height: calc(
-		100vh - 3rem
-	); /* Subtract footer height from viewport height */
-	position: relative; /* Establish positioning context */
+	// min-height: calc(100vh - 3rem);
+	position: relative;
+}
+
+main {
+	max-width: 62.5rem;
+	min-height: calc(100vh - 3rem);
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+li {
+	list-style-type: none;
+}
+
+.footer-orange {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw; /* Cover the entire width of the viewport */
+	height: 3rem;
+	background-color: $accent-color;
 }

@@ -1,0 +1,14 @@
+@import "src/variables.scss";
+@import "src/index.scss";
+
+.contact {
+	font-weight: 100;
+
+	&__company-p {
+		font-size: 1.25rem;
+	}
+
+	&__contact__info-p {
+		font-size: 1rem;
+	}
+}
